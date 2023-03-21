@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href='./index.html' class="logo"><strong>My</strong> Site</a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Проекты</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Навыки</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
+                    <li class="nav-list__item"><a href="./gallery.html" class="nav-list__link nav-list__link--active">Галерея</a></li>
+                    <li class="nav-list__item"><a href="./content.html" class="nav-list__link">Контент</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="container">
+            <h1 class="title-1">Галерея</h1>
+            <h2 class="title-2">Любимые картиночки</h2>
+            <div class="all">
+                <input checked type="radio" name="respond" id="desktop" />
+                    <article id="slider">
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
+                            <input type="radio" name="slider" id="switch3">
+                            <input type="radio" name="slider" id="switch4">
+                            <input type="radio" name="slider" id="switch5">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <article><img src="./img/1.jpg"></article>
+                                    <article><img src="./img/2.jpg"></article>
+                                    <article><img src="./img/3.jpg"></article>
+                                    <article><img src="./img/4.jpg"></article>
+                                    <article><img src="./img/5.jpg"></article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
+                        </div>
+                    </article>
+            </div>
+            <section class="gallery">
+                <div class="gallery-list">
+                  <a href="img/beetle.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/beetle.jpg" alt="alt">
+                  </a>
+                  <a href="img/liberty.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/liberty.jpg" alt="alt">
+                  </a>
+                  <a href="img/lighthouse.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/lighthouse.jpg" alt="alt">
+                  </a>
+                  <a href="img/minimalismo.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/minimalismo.jpg" alt="alt">
+                  </a>
+                  <a href="img/salad.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/salad.jpg" alt="alt">
+                  </a>
+                  <a href="img/shutterbug.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/shutterbug.jpg" alt="alt">
+                  </a>
+                  <a href="img/skaterboy.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/skaterboy.jpg" alt="alt">
+                  </a>
+                  <a href="img/woodcraft.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/woodcraft.jpg" alt="alt">
+                  </a>
+                </div>
+              </section>
+            
+            
+              <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+              <script>
+                $(".gallery-list").magnificPopup({
+                  delegate: "a",
+                  type: "image",
+                  gallery: {
+                    enabled: true
+                  }
+                });
+              </script>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./icons/vk.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./icons/instagram.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./icons/twitter.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./icons/gitHub.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./icons/linkedIn.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                  <p>2023 pma21dubna.github.io</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(".gallery").magnificPopup({
+          delegate: ".galItem",
+          type: "image",
+          gallery: {
+        enabled: true
+          }
+        });
+      </script>
+</body>
+</html>
